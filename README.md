@@ -8,7 +8,7 @@
 
 ## Getting Started
 
-1. Create an API token
+### 1. Create an API token
 
 The API token can be any string value. The following example shows a random base64 token generation with OpenSSL:
 
@@ -16,7 +16,7 @@ The API token can be any string value. The following example shows a random base
 openssl rand 16 | base64
 ```
 
-2. Set the token and start Dapr
+### 2. Set the token and start Dapr
 
 Take the token generated above and set it as an environment variable on the terminal session you will use to start Dapr:
 
@@ -30,7 +30,7 @@ Start a Dapr instance:
 dapr run --app-id myapp --dapr-http-port 3500 --dapr-grpc-port 50001
 ```
 
-3. Set the token and start the app
+### 3. Set the token and start the app
 
 Set the token as an environment variable for your app to read when it sends requests to Dapr. This needs to be set in the terminal session you will use to start the `main.go` file:
 
