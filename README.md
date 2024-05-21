@@ -48,3 +48,7 @@ go run main.go
 ```
 
 *Note: If you clear the `DAPR_TOKEN` env var for your app, you'll see the call to Dapr fails. Otherwise it succeeds.*
+
+### Refreshing the token
+
+To refresh the token, simply generate a new token (like in Step 1 above), kill the `daprd` and app process, export the new token and start the `daprd` and app processes again.
